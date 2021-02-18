@@ -24,7 +24,6 @@ class Artist
   def self.find_or_create_by_name(name)
     if @@all.find {|artist| artist.name == name}
     else initialize(name)
-      return self
     end
   end
 
