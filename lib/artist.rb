@@ -15,7 +15,6 @@ class Artist
     @@all
   end
 
-
   def add_song(song)
     @songs << song
     song.artist = self
@@ -26,7 +25,9 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if @@all.find {|artist| artist.name == name}
+    found = @@all.find {|artist| artist.name == name}
+    if found
+      found
     else initialize(name)
     end
   end
