@@ -15,9 +15,8 @@ class Song
     filename.split(" - ")
     filename[0] = @name
     filename[1] = @artist
-    initialize(filename[0])
+    initialize(@name)
   end
-
 
   def artist_name=(@artist)
     Artist.find_or_create_by_name(@artist)
