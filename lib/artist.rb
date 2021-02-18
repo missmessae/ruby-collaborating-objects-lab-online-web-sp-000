@@ -31,7 +31,6 @@ class Artist
       found_artist
     else
       new_artist = self.new(name)
-      new_artist.save
       new_artist
     end
   end
