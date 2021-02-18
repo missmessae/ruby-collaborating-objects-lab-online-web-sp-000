@@ -36,7 +36,8 @@ class Artist
   end
 
   def print_songs
-    @songs #this is an array of instnces, need to pull out the name attribute?
-  end
-
+      @songs.each do |song|
+        puts song.name
+      end
+    end
 end
