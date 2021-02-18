@@ -16,7 +16,7 @@ class Song
     @name = filename[0]
     @artist = filename[1]
     song = self.new(name)
-    self.artist = artist
+    self.artist = @artist
   end
 
   def artist_name=(artist_name)
