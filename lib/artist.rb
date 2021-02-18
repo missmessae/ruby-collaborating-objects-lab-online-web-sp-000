@@ -28,8 +28,7 @@ class Artist
   end
 
   def print_songs
-    @songs #this is an array of instnces, need to pull out the name attribute? 
+    @songs #this is an array of instnces, need to pull out the name attribute?
   end
-
 
 end
