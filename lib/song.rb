@@ -18,8 +18,8 @@ class Song
     initialize(@name)
   end
 
-  def artist_name=(@artist)
-    Artist.find_or_create_by_name(@artist)
+  def artist_name=(artist)
+    Artist.find_or_create_by_name(artist)
   end
 
 end
