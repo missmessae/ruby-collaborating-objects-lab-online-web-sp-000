@@ -9,7 +9,7 @@ class Artist
 
   def save
     @@all << self
-end
+  end
 
   def self.all
     @@all
