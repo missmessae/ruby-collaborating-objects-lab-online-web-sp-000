@@ -1,7 +1,8 @@
 class MP3Importer
   attr_accessor :path
 
-  def initialize
+  def initialize(path)
+    @path = File.join(File.dirname(__FILE__), *%w[rel path here])
   end
 
   def files
@@ -9,6 +10,6 @@ class MP3Importer
 
   def import
   end
-  
+
 
 end
